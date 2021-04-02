@@ -1,0 +1,44 @@
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <title>Portfolio Lading Page</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="shorcut icon" href="assets/web icon.png">
+    </head>
+    <body>
+      <section class="banner" id="sec" >
+          <header>
+              <a href="#" class="logo">Logo</a>
+              <div id="toggle" onclick="toggle()"></div>
+          </header>
+          <div class="content">
+              <h2>Hello World,<br>I'm <span>Duy Duy</span></h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus minima harum praesentium quos reiciendis ipsum officiis error explicabo quaerat, commodi voluptatem necessitatibus iste, voluptates nobis illo tenetur perspiciatis. Cumque, expedita.</p>
+              <a href="#">Know More</a>
+          </div>
+          <ul class="social">
+              <li><a href=""><img src="assets/facebook.png" alt=""></a></li>
+              <li><a href=""><img src="assets/twitter.png" alt=""></a></li>
+              <li><a href=""><img src="assets/linkedin.png" alt=""></a></li>
+          </ul>
+      </section>
+    <div id="navigation">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+    <script>
+        function toggle(){
+            var sec=document.getElementById('sec');
+            var nav=document.getElementById('navigation');
+            sec.classList.toggle('active')
+            nav.classList.toggle('active')
+        }
+    </script>
+    </body>
+</html>
